@@ -3,11 +3,7 @@ interface Props {
 }
 
 const AnimatedText = ({ children }: Props) => {
-  return (
-    <span className="transition duration-500">
-      {children}
-    </span>
-  );
+  return <span className="transition duration-500">{children}</span>;
 };
 
 export default AnimatedText;

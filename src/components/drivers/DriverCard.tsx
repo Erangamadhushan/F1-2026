@@ -10,9 +10,7 @@ interface Props {
 const DriverCard = ({ driver }: Props) => {
   return (
     <div className="p-8 border border-neutral-800 rounded-lg hover:bg-neutral-900 transition cursor-pointer">
-      <h3 className="text-2xl font-semibold">
-        {driver.name}
-      </h3>
+      <h3 className="text-2xl font-semibold">{driver.name}</h3>
     </div>
   );
 };

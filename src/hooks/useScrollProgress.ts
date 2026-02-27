@@ -6,16 +6,14 @@ const useScrollProgress = () => {
   useEffect(() => {
     const handleScroll = () => {
       const totalHeight =
-        document.documentElement.scrollHeight -
-        window.innerHeight;
+        document.documentElement.scrollHeight - window.innerHeight;
 
       const current = window.scrollY;
       setProgress(current / totalHeight);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () =>
-      window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return progress;

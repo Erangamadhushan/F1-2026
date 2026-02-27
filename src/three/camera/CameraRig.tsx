@@ -8,8 +8,7 @@ const CameraRig = () => {
     timeRef.current += delta;
 
     state.camera.position.x = Math.sin(timeRef.current * 0.3) * 0.5;
-    state.camera.position.y =
-      1.5 + Math.sin(timeRef.current * 0.5) * 0.1;
+    state.camera.position.y = 1.5 + Math.sin(timeRef.current * 0.5) * 0.1;
 
     state.camera.lookAt(0, 0.5, 0);
   });

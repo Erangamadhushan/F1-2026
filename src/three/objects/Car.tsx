@@ -15,11 +15,7 @@ const Car = () => {
     <group ref={groupRef} position={[0, 0.5, 0]}>
       <mesh castShadow receiveShadow>
         <boxGeometry args={[3, 0.5, 1.2]} />
-        <meshStandardMaterial
-          color="#111111"
-          metalness={0.8}
-          roughness={0.2}
-        />
+        <meshStandardMaterial color="#111111" metalness={0.8} roughness={0.2} />
       </mesh>
     </group>
   );

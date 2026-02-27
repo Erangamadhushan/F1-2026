@@ -7,6 +7,5 @@ interface SceneState {
 
 export const useSceneStore = create<SceneState>((set) => ({
   selectedTeam: null,
-  setSelectedTeam: (team) =>
-    set({ selectedTeam: team }),
+  setSelectedTeam: (team) => set({ selectedTeam: team }),
 }));

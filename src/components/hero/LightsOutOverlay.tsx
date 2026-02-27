@@ -12,10 +12,7 @@ const LightsOutOverlay = () => {
     >
       <div className="flex gap-4">
         {Array.from({ length: 5 }).map((_, i) => (
-          <div
-            key={i}
-            className="w-8 h-8 bg-red-600 rounded-full"
-          />
+          <div key={i} className="w-8 h-8 bg-red-600 rounded-full" />
         ))}
       </div>
     </div>
