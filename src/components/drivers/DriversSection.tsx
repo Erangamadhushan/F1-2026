@@ -39,11 +39,11 @@ const DriversSection = () => {
             key={driver.id}
             className="p-6 border border-neutral-800 rounded-xl hover:scale-105 transition"
           >
-            <img
+            {/* <img
               src={driver.image}
               alt={driver.lastName}
               className="w-full h-60 object-cover rounded-lg mb-4"
-            />
+            /> */}
 
             <h3 className="text-xl font-bold">
               {driver.firstName} {driver.lastName}

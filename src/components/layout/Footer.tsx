@@ -5,9 +5,6 @@ import NewsletterForm from "../footer/NewsletterForm";
 const Footer = () => {
   return (
     <motion.footer
-      initial={{ opacity: 0, y: 80 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
       viewport={{ once: true }}
       id="footer"
       className="bg-neutral-950 border-t border-neutral-800 mt-32"

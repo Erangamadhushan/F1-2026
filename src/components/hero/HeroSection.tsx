@@ -1,20 +1,21 @@
 import Navbar from "../layout/Navbar";
 import { useEffect, useState } from "react";
 import { images } from "../../data/images";
+import { newsData } from "../../data/News";
 
 const HeroSection = () => {
-  const [imgIndex, setImgIndex] = useState(0);
+  const [index, setIndex] = useState(0);
   useEffect(() => {
     const imgTimeout = setTimeout(() => {
-      setImgIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setIndex((prevIndex) => (prevIndex + 1) % newsData.length);
     }, 5000);
     return () => clearTimeout(imgTimeout);
-  }, [imgIndex]);
+  }, [index]);
   return (
     <section
       className="relative min-h-screen bg-[#0c0f1a] overflow-hidden"
       style={{
-        backgroundImage: `url(${images[imgIndex]})`,
+        backgroundImage: `url(${images[index]})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -32,14 +33,21 @@ const HeroSection = () => {
       {/* Main Content Wrapper */}
       <div className="relative w-full px-6 pt-32 pb-20">
         {/* Text Content */}
-        <div className="flex min-h-[60vh] flex-col justify-center px-12 max-w-2xl">
+        <div className="flex min-h-[65vh] flex-col justify-center px-4 md:px-12 max-w-4xl">
           <span className="bg-red-600 text-xs uppercase tracking-wider px-3 py-1 w-fit mb-6">
             News
           </span>
 
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            New McLaren wind tunnel ‘critical’ to future performance
+            {
+              newsData[index].title
+            }
           </h1>
+          <p className="text-lg md:text-xl opacity-80 mb-8">
+            {
+              newsData[index].description
+            }
+          </p>
 
           <button className="text-sm uppercase tracking-wide flex items-center gap-2 group">
             Find out more
@@ -50,18 +58,21 @@ const HeroSection = () => {
         {/* Bottom News Preview Bar */}
         <div className="grid md:grid-cols-3 gap-6 mt-10 text-sm">
           <div className="border-t border-neutral-700 pt-4">
-            <p className="opacity-60 text-xs mb-2">16 August 2019</p>
-            <p>New McLaren wind tunnel ‘critical’ to future performance</p>
+            <p className="opacity-60 text-xs mb-2">6 March 2026</p>
+            <p>
+              McLaren's new wind tunnel is a key part of their 2026 development
+              plan
+            </p>
           </div>
 
           <div className="border-t border-neutral-700 pt-4">
-            <p className="opacity-60 text-xs mb-2">12 August 2019</p>
-            <p>What To Watch For in the Hungarian Grand Prix</p>
+            <p className="opacity-60 text-xs mb-2">12 August 2026</p>
+            <p>Red Bull's new car design is causing controversy</p>
           </div>
 
           <div className="border-t border-neutral-700 pt-4">
-            <p className="opacity-60 text-xs mb-2">08 August 2019</p>
-            <p>Hamilton wants harder championship fight</p>
+            <p className="opacity-60 text-xs mb-2">08 August 2026</p>
+            <p>Formula 1's new technical regulations are being discussed</p>
           </div>
         </div>
       </div>

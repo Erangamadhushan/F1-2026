@@ -4,6 +4,7 @@ import TeamsSection from "../components/teams/TeamsSection";
 import CalendarSection from "../components/calendar/CalendarSection";
 import GlobeSection from "../components/globe/GlobeSection";
 import DriversSection from "../components/drivers/DriversSection";
+import ConclusionSection from "../components/conclusion/ConclusionSection";
 import Footer from "../components/layout/Footer";
 import ScrollToTop from "../components/ui/ScrollToTop";
 
@@ -16,6 +17,7 @@ const Home = () => {
       <GlobeSection />
       <TeamsSection />
       <DriversSection />
+      <ConclusionSection />
       <ScrollToTop />
       <Footer />
     </main>

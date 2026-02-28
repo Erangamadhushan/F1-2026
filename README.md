@@ -1,10 +1,12 @@
 # 🏎 F1 2026 — Interactive Cinematic Experience
+# 🚀 Live Demo
+🔗 Live Site: [F1-2026](https://f1-2026-iota.vercel.app/)\
+🔗 Portfolio Case Study: Coming Soon
+
+![F1 2026](./public/screenshots/screencapture-localhost-5173.png)
 
 A premium interactive Formula 1 web experience built with modern front-end technologies, 3D rendering, and smooth animations.
 
-# 🚀 Live Demo
-🔗 Live Site: Coming Soon\
-🔗 Portfolio Case Study: Coming Soon
 
 # ✨ Overview
 

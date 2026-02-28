@@ -4,7 +4,7 @@ import TeamCard from "./TeamCard";
 
 const TeamsSection = () => {
   return (
-    <section id="teams" className="min-h-screen px-8 py-24 bg-neutral-950">
+    <section id="teams">
       <SectionTitle
         title="Teams"
         subtitle="Choose your favorite constructor."
