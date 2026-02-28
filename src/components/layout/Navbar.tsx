@@ -1,9 +1,6 @@
 import {
   Search,
   Menu,
-  Clock10Icon,
-  ClosedCaption,
-  PanelRightClose,
   PanelLeftClose,
 } from "lucide-react";
 import { useState } from "react";
