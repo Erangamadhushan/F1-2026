@@ -4,7 +4,7 @@ import TeamCard from "./TeamCard";
 
 const TeamsSection = () => {
   return (
-    <section id="teams">
+    <section id="teams" className="p-4">
       <SectionTitle
         title="Teams"
         subtitle="Choose your favorite constructor."
